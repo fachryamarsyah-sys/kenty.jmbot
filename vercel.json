@@ -1,0 +1,14 @@
+// vercel.json
+{
+  "routes": [
+    {
+      "src": "/api/payment",
+      "methods": ["GET", "POST"],
+      "dest": "/api/payment"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/index.html"
+    }
+  ]
+}
